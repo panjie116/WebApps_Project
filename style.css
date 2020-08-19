@@ -1,0 +1,293 @@
+/*css for the index page start*/
+body{
+	background: #0099CC;
+	height: 100vh;
+	font-family: Candara;
+}
+/*css for index page end*/
+
+
+/*css for the content area(about myself) start*/
+.content .content-image img{
+	top: 0;
+	right: 0;
+	position: absolute;
+	height: 100%;
+	z-index: -1;
+	max-width: 100%;
+	width: 40%;
+}
+
+.content .content-text{
+	padding: 50px 100px;
+	margin-left: 40px;
+	padding-right: 50%;
+}
+
+.content .content-text h3{
+	font-family: sans-serif;
+	margin-bottom: 18px;
+	color: blue;
+	font-size: 20px;
+	font-weight: normal;
+}
+
+.content .content-text h1{
+	margin-bottom: 10px;
+	letter-spacing: 3px;
+	font-size: 50px;
+	text-transform: uppercase;
+	font-family: Chiller;
+	color:   #331a00;
+}
+
+.content .content-text p{
+	font-family: Candara;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 1.5vw;
+  	font-weight: 100;
+  	text-align: justify;
+
+}
+/*css for the content area(about myself) end*/
+
+/*css for the download cv button start*/
+.btn{
+	margin-top: 40px;
+	padding: 14px 26px;
+	background: #fff;
+	color: #c39f58;
+	border:0;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-size: 12px;
+	position: relative;
+	transition: .5s;
+}
+
+.btn:before{
+	content: '';
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	border:2px solid #c39f58;
+	transition: .3s;
+}
+/*css for the download cv button end*/
+
+/*css for the contact info start*/
+.info-box{
+	position: fixed;
+	top: 65%;
+	bottom: 0%;
+	left: 0%;
+	width: 20%;
+	height: 30%;
+	padding-bottom: 50%;
+	box-shadow: 0 10px 30px rgba(0,0,0,.3);
+	border-top: 20px solid #2c3e50;
+	transition: .5s;
+}
+.info-box:hover{
+	box-shadow: 0 10px 30px rgba(0,0,0,.6);
+}
+
+h4{
+	margin: 0;
+	padding:0 0 10px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #2c3e50; 
+	font-size: 20px;
+}
+
+.info-box ul{
+	margin: 20px 0 0;
+	padding: 0;
+}
+
+.info-box ul li{
+	list-style: none;
+	position: relative;
+	margin: 20px 0;
+}
+
+.info-box ul li:last-child{
+	margin-bottom: 0;
+}
+
+.info-box ul li .icon{
+	position: relative;
+	top: 0;
+	display: inline-block;
+	width: 25px;
+	color: red;
+	vertical-align: top;
+}
+.info-box ul li .info{
+	display: inline-block;
+	font-size: 15px;
+}
+/*css for the contact info end*/
+
+
+/*css for responsiveness start*/
+@media (max-width: 858px){
+	.content .content-text{
+		padding: 20px 40px;
+	}
+	.content .content-text h1{
+		padding: 20px 40px;
+	}
+
+	.content-image{
+		display: none;
+	}
+
+}
+/*css for responsiveness end*/
+
+
+/*css for the class timetable start*/
+.content-table{
+	border-collapse: collapse;
+	margin: 25px 0;
+	font-size: 20px;
+	min-width: 400px;	
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rga(0, 0, 0, 0.15);
+	right: 0;
+	position: absolute;
+	top: 10%;
+	bottom: 65%;
+	right: 0%;
+	padding-bottom: 50%;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+	max-width: 100%;
+	width: 40%;
+}
+
+.content-table thead tr{
+	background-color: #2c3e50;
+	color: white;
+	text-align: left;
+	font-weight: bold;
+}
+
+.content-table th, .content-table td{
+	padding: 12px 15px;
+} 
+
+.content-table tbody tr{
+	border-bottom: 1px solid white;
+}
+.content-table tbody tr:nth-of-type(even) {
+	background-color: #1b9bff;
+}
+
+.content-table tbody tr:last-of-type{
+	border-bottom: 2px solid #2c3e50;
+}
+
+/*css for the class timetable end*/
+
+
+/*css for the department content start*/
+.department-content{
+	padding: 50px 100px;
+	margin-left: 40px;
+	padding-right: 50%;
+	list-style: none; counter-reset: li;
+}
+.department-content h1{
+	color: #3b5998;
+	text-transform: uppercase;
+}
+.department-content p{
+	font-family: Candara;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 1.5vw;
+  	font-weight: 100;
+  	text-align: justify;
+  	display: block;  	
+}
+
+.department-content p:first-letter{
+	text-transform: uppercase;
+	font-size: 4vw;
+}
+.aims-list li::before{
+	content: counter(li);
+	color:#fff;
+	background-color: #d7385e;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-flex;
+	border-radius: 50%;
+	align-items: center;
+	font-size: 40px;
+}
+
+.aims-list li{
+	counter-increment: li;
+	font-family: Candara;
+}
+.aims-list ol li{
+	font-family: Candara;
+	color: white;
+	letter-spacing: 1px;
+	font-size: 1vw;
+  	font-weight: 100;
+  	text-align: justify;
+  	display: block; 
+	margin-left: 130px;
+	padding-right: 50%;
+	text-align: justify-all;
+}
+/*css for the department content end*/
+
+
+
+/*css for the links page start*/
+.links{
+	text-align: center;
+	padding-top: 10%;
+	font-size: 23px;
+}
+
+.list{
+	list-style: none; counter-reset: li;
+}
+
+.list li::before{
+	content: counter(li);
+	color:#fff;
+	background-color: #d7385e;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-left: 10px;
+	margin-right: 10px;
+	display: inline-flex;
+	border-radius: 50%;
+	align-items: center;
+	font-size: 30px;
+}
+
+.list li{
+	counter-increment: li;
+}
+/*css for the links page start*/
+
+
+
